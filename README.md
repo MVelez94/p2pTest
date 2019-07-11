@@ -1,6 +1,7 @@
 INTRODUCTION
 -------------------
 
+This is a test from Place to Pay in order to follow a job application process.
 
 
 DIRECTORY STRUCTURE
@@ -17,6 +18,7 @@ DIRECTORY STRUCTURE
       vendor/             contains dependent 3rd-party packages
       views/              contains view files for the Web application
       web/                contains the entry script and Web resources
+      sql/                contains a SQL file to be run before using the system
 
 
 
@@ -40,10 +42,12 @@ You can then install this project template using the following command:
 composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 ~~~
 
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
+Now you should be able to access the application through the following URL, assuming `p2pTest` is the directory
 directly under the Web root.
 
 ~~~
-http://localhost/basic/web/
+http://localhost/basic/p2pTest/
 ~~~
+
+You need to run the SQL file located in sql/ in order to create the database. You will also need to change config/db.php if you are not using a local MySQL Server.
 
